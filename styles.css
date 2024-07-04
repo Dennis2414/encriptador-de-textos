@@ -1,169 +1,114 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fc;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
-}
-
-.input-section {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.output-section {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    background-color: #f0f6fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+
+.input-section, .output-section {
+    width: 100%;
     margin-bottom: 20px;
-    color: #333;
 }
 
 textarea {
     width: 100%;
-    height: 150px;
-    margin-bottom: 10px;
+    height: 100px;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     resize: none;
-}
-
-textarea:focus {
-    outline: none;
-    border-color: #007bff;
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px 0;
+.encriptar-btn, .desencriptar-btn {
+    background-color: #001f54;
+    color: #fff;
     border: none;
-    border-radius: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
-    flex: 1 1 45%;
-}
-
-.encriptar-btn {
-    background-color: #004aad;
-    color: white;
-}
-
-.encriptar-btn:hover {
-    background-color: #003a8c;
+    font-size: 16px;
 }
 
 .desencriptar-btn {
-    background-color: #e7e7e7;
-    color: #333;
+    background-color: #6b86c5;
 }
 
-.desencriptar-btn:hover {
-    background-color: #d7d7d7;
-}
-
-button#copyButton {
-    margin-top: 20px;
-    background-color: #004aad;
-    color: white;
-}
-
-button#copyButton:hover {
-    background-color: #003a8c;
-}
-
-.placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#placeholder-text {
-    font-size: 18px;
-    color: #666;
-}
-
-#placeholder-subtext {
-    font-size: 14px;
-    color: #999;
+.encriptar-btn:hover, .desencriptar-btn:hover {
+    background-color: #081c50;
 }
 
 .note {
     font-size: 12px;
-    color: #999;
-    margin-top: 10px;
+    color: #555;
 }
 
-/* Media Queries para Responsividad */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-    }
-
-    .input-section,
-    .output-section {
-        flex: 1;
-    }
-
-    .buttons {
-        flex-direction: row;
-    }
-
-    button {
-        margin: 0 5px;
-    }
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (max-width: 767px) {
-    .container {
-        padding: 10px;
-    }
+.placeholder {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-    textarea {
-        height: 100px;
-    }
+#outputText {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    min-height: 50px;
+}
 
+#copyButton {
+    background-color: #001f54;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#copyButton:hover {
+    background-color: #0037c4;
+}
+
+@media (max-width: 600px) {
     .buttons {
         flex-direction: column;
     }
 
-    button {
-        margin: 5px 0;
+    .encriptar-btn, .desencriptar-btn {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }

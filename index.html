@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de Textos</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de Textos</title>
 </head>
 <body>
     <div class="container">
         <div class="input-section">
-            <h1>Encripta y Desencripta Textos</h1>
-            <textarea id="inputTexto" placeholder="Ingrese el texto aquí..."></textarea>
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
             <div class="buttons">
-                <button class="encriptar-btn" onclick="encriptarTexto()">Encriptar</button>
-                <button class="desencriptar-btn" onclick="desencriptarTexto()">Desencriptar</button>
+                <button id="encryptButton" class="encriptar-btn">Encriptar</button>
+                <button id="decryptButton" class="desencriptar-btn">Desencriptar</button>
             </div>
-            <p class="note">Solo letras minúsculas y sin acentos</p>
+            <div class="note">Solo letras minúsculas y sin acentos</div>
         </div>
         <div class="output-section">
-            <div class="placeholder" id="placeholder">
-               
+            <div id="placeholder" class="placeholder">
                 <p id="placeholder-text">Ningún mensaje fue encontrado</p>
-                <img src="img/Muñeco.png" alt="Placeholder Image" />
                 <p id="placeholder-subtext">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <textarea id="outputTexto" placeholder="Resultado..." readonly></textarea>
-            <button id="copyButton" onclick="copiarTexto()">Copiar</button>
+            <p id="outputText"></p>
+            <button id="copyButton">Copiar</button>
         </div>
     </div>
     <script src="script.js"></script>
