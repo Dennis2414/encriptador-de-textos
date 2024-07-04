@@ -1,33 +1,49 @@
-# encriptador-de-textos
-Encriptador de Textos
-Este proyecto es una aplicación web que permite encriptar y desencriptar textos utilizando un sistema específico de conversión de letras. La aplicación es fácil de usar y es compatible con dispositivos móviles y de escritorio.
+# Encriptador de Textos
 
-Características:
+Esta aplicación web permite encriptar y desencriptar textos utilizando un sistema específico de conversión de letras.
 
-Encriptación de Textos: Convierte letras específicas a secuencias de texto definidas.
-Desencriptación de Textos: Convierte las secuencias de texto encriptadas de vuelta a las letras originales.
-Interfaz Responsiva: La aplicación se adapta a diferentes tamaños de pantalla.
-Función de Copiado: Copia el texto encriptado o desencriptado al portapapeles con un solo clic.
-Reglas de Encriptación:
+## Requisitos
 
-La letra "e" se convierte a "enter".
-La letra "i" se convierte a "imes".
-La letra "a" se convierte a "ai".
-La letra "o" se convierte a "ober".
-La letra "u" se convierte a "ufat".
-Requisitos:
+- Solo funciona con letras minúsculas.
+- No se deben utilizar letras con acentos ni caracteres especiales.
+- Debe ser posible convertir una palabra a su versión encriptada y también devolver una palabra encriptada a su versión original.
 
-Funciona solo con letras minúsculas.
-No se deben usar letras con acentos ni caracteres especiales.
+### Llaves de encriptación
 
-Uso:
+- La letra "e" se convierte a "enter".
+- La letra "i" se convierte a "imes".
+- La letra "a" se convierte a "ai".
+- La letra "o" se convierte a "ober".
+- La letra "u" se convierte a "ufat".
 
-Ingresa el texto que deseas encriptar o desencriptar en el área de texto correspondiente.
-Haz clic en el botón "Encriptar" para encriptar el texto.
-Haz clic en el botón "Desencriptar" para desencriptar el texto.
-Usa el botón "Copiar" para copiar el resultado al portapapeles.
-Estructura del Proyecto
-index.html: Archivo HTML principal.
-styles.css: Archivo CSS para estilos.
-script.js: Archivo JavaScript para la lógica de encriptación y desencriptación.
-placeholder.png: Imagen de marcador de posición para la sección de salida.
+## Funcionalidades
+
+- Encriptar texto.
+- Desencriptar texto.
+- Validación en tiempo real para asegurarse de que el texto solo contenga letras minúsculas sin acentos.
+- Copiar el texto encriptado o desencriptado al portapapeles.
+
+## Estructura de Archivos
+
+- `index.html`: Contiene la estructura HTML de la aplicación.
+- `styles.css`: Contiene los estilos CSS para la aplicación.
+- `script.js`: Contiene la lógica JavaScript para encriptar, desencriptar, validar el texto y copiar al portapapeles.
+
+## Uso
+
+1. Abre el archivo `index.html` en tu navegador.
+2. Ingresa el texto que deseas encriptar o desencriptar en el área de texto.
+3. Haz clic en el botón "Encriptar" para encriptar el texto o en el botón "Desencriptar" para desencriptar el texto.
+4. El texto resultante se mostrará en la sección de salida.
+5. Haz clic en el botón "Copiar" para copiar el texto resultante al portapapeles.
+
+## Instalación
+
+1. Clona el repositorio a tu máquina local.
+2. Abre el proyecto en tu editor de código preferido.
+3. Abre el archivo `index.html` en tu navegador para ver la aplicación en funcionamiento.
+
+
+
+
+
